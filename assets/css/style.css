@@ -587,6 +587,11 @@ aside#l-site-aside .nav-menu ul li a {
   opacity: 0;
 }
 
+.sns-links-area {
+  position: relative;
+  text-align: center;
+}
+
 #top.is-fixed {
   position: fixed;
 }
@@ -665,6 +670,7 @@ aside#l-site-aside .nav-menu ul li a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 20px;
 }
 
 #top main #section-container #about .section-content_flex-container .about-content-area {
