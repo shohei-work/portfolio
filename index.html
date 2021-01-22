@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Webエンジニア Shohei のポートフォリオサイトです。お受けすることのできるお仕事についてや、制作実績を載せています。デザインカンプからのコーディング（HTML/CSS/Javascript）、Webアプリケーション開発、AWSでの...">
+        <meta name="keywords" content="Webエンジニア,Web制作,Webデザイン,Webアプリケーション,AWS,インフラ構築">
+        <meta name="author" content="shohei">
+        <meta property="og:title" content="title">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://#{metas.url}">
+        <meta property="og:image" content="http://#{metas.image}/og_image.png">
+        <meta property="og:site_name" content="site_name">
+        <meta property="og:description" content="description">
+        <meta property="fb:app_id" content="任意のID">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=cyrillic,latin" rel="stylesheet" type="text/css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-XXXXXXXX-Y', 'example.com');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="./assets/js/lodash.min.js"></script>
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/particles-setting.js"></script>
+  <script src="./assets/js/three.min.js"></script>
+  <script src="./assets/js/three-settings.js"></script>
+  <script src="./assets/js/three-objects.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script>(window.jQuery || document .write('<script src="js/jquery-1.11.2.min.js"><\/script>'));</script>
+    <body class="l-container" id="top" onload="init()">
+      <div class="shutter">
+        <div class="welcom-img"><img src="./assets/images/welcome.png"></div>
+      </div>
+      <div class="content">
+        <header id="l-site-header">
+          <div class="header-flex-container">
+            <div id="site-title"><a href="/">
+                <h1>Shohei's portfolio site</h1></a></div>
+            <div id="site-nav">
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div id="nav-toggle-button">
+              <button class="menu-trigger"><span></span><span></span><span></span></button>
+            </div>
+          </div>
+        </header>
+        <div id="background"></div>
+        <div id="canvas-container"></div>
+        <div id="canvas-container2"></div>
+        <div id="scroll-arrow"><span></span><span></span><span></span><a href="#section-container">Scroll</a></div>
+              <main class="p-top-main" id="l-site-main">
+                <div class="blank-area"></div>
+                <div id="rocket-img"><img src="./assets/images/space-rocket.png"></div>
+                <div id="section-container">
+                  <section id="about">
+                    <h2>About.</h2>
+                    <div class="section-content">
+                      <div class="section-content_flex-container">
+                        <div class="about-image-area section-content_flex-item"><img src="./assets/images/profile.png"></div>
+                        <div class="about-content-area section-content_flex-item">
+                          <p class="about-content_descripiton">  Webエンジニアをしている <span class="name-item">shohei</span> のポートフォリオサイトです。</p>
+                          <p class="about-content_sub-title">  プロフィール</p>
+                          <p class="about-content_sub-content">・年齢：37歳 <br>・趣味：釣り、キャンプ<br>・その他：埼玉県在住、１児の父</p>
+                          <p class="about-content_sub-title">  経歴</p>
+                          <p class="about-content_sub-content"> SES企業で12年勤続<br>・大手証券系システム開発（ 汎用機COBOL / ORACLE ストアドバッチ開発 ）<br>・大手プリンター管理システム（ Java Spring framework ）<br><br>Web制作会社へ転職<br>・Webエンジニア<br>（ Wordpressテーマ開発 / LP制作 / AWS環境構築 / サーバー・ドメイン移管 / アプリ開発( Laravel ) etc ）<br><br>※客先常駐での勤務経験や、大手チェーン店のコーポレートサイト制作をインフラからWordpress開発まで担当など経験がありますので、責任をもって依頼をこなし、テストや確認作業も堅実におこなえます。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section id="skills">
+                    <h2>Skills & Service.</h2>
+                    <div class="section-content">
+                      <div class="section-content_flex-container">
+                        <div class="sliklls-content-area section-content_flex-item">
+                          <div class="skills-content_img"><img src="./assets/images/coding-icon.png"></div>
+                          <p class="skills-content_sub-title">HTML/CSS/<br class="pc_only">Javascript</p>
+                          <p class="skills-content_sub-content">デザインカンプからのコーディング、Javascriptを利用した機能やアニメーション開発</p>
+                        </div>
+                        <div class="sliklls-content-area section-content_flex-item">
+                          <div class="skills-content_img"><img src="./assets/images/wordpress-logo.png"></div>
+                          <p class="skills-content_sub-title">wordpress<br class="pc_only">構築・開発</p>
+                          <p class="skills-content_sub-content">wordpress導入、オリジナルテーマ開発、機能追加開発、WordpressとASPカートシステムと連携したECサイト開発</p>
+                        </div>
+                        <div class="sliklls-content-area section-content_flex-item">
+                          <div class="skills-content_img"><img src="./assets/images/aws-icon.png"></div>
+                          <p class="skills-content_sub-title">AWSインフラ<br class="pc_only">構築</p>
+                          <p class="skills-content_sub-content">低ランニングコストでの高可用性環境の構築、SES、Lambda、S3､Cloudfrontなどを利用したサーバーレスホスティング環境構築</p>
+                        </div>
+                        <div class="sliklls-content-area section-content_flex-item">
+                          <div class="skills-content_img"><img src="./assets/images/php-icon.png"></div>
+                          <p class="skills-content_sub-title">サービス開発</p>
+                          <p class="skills-content_sub-content">PHP / Laravel でのサービス開発（会員制サービスや支払いASPと連携した課金型サービス開発） </p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section id="works">
+                    <h2>Works.</h2>
+                    <div class="section-content">
+                      <div class="section-content_flex-container">
+                        <div class="works-content-area section-content_flex-item" data-img="./assets/images/noimage.jpg" data-title="LP（サンプル）" data-content="※現在、準備中です。デザインカンプから作成したサンプルを公開予定です。">
+                          <div class="works-content_img"><img src="./assets/images/noimage.jpg"></div>
+                          <p class="works-content_sub-title">LP（サンプル）</p>
+                          <p class="works-content_sub-content">※Coming soon ...</p>
+                        </div>
+                        <div class="works-content-area section-content_flex-item" data-img="./assets/images/oneandonly-img.png" data-title="LP（サンプル）" data-content="私が運営するサービスのサイトです。&lt;br&gt;デザインに興味をもつすべての方がＴシャツという形を通してデザインを発信・販売できるサイトです。&lt;br&gt;デザイナーを目指している方やセカンドクリエーターの方の作品を世に広めるお手伝いをしたいと思い制作しました。&lt;br&gt;Wordpress側を&lt;a href='https://thebase.in/' target='_blank'&gt;BASE&lt;/a&gt;のテーマと合わせたデザインにすることで、SEOやコンテンツマーケ（ブログ機能）を持った１つのサイトとして作成しています。&lt;br&gt;&lt;br&gt;&lt;a href='https://oneandonly.side-kick.work/' target='_blank'&gt;https://oneandonly.side-kick.work/&lt;/a&gt;">
+                          <div class="works-content_img"><img src="./assets/images/oneandonly.jpg"></div>
+                          <p class="works-content_sub-title">One and Only</p>
+                          <p class="works-content_sub-content">Wordpress x EC ASP（BASE）で作られたECサービスサイト</p>
+                        </div>
+                        <div class="works-content-area section-content_flex-item" data-img="./assets/images/noimage.jpg" data-title="会社員としての実績（一部）" data-content="・大手飲食チェーンのコーポレートサイト（ＡＷＳインフラ、Wordpressオリジナルテンプレート開発）&lt;br&gt;・会員制サービスサイト（課金機能あり）の開発（PHP/Larabel）など多数">
+                          <div class="works-content_img"><img src="./assets/images/noimage.jpg"></div>
+                          <p class="works-content_sub-title">Others</p>
+                          <p class="works-content_sub-content">（会社員として）<br>大手飲食チェーンのコーポレートサイト、会員制サービスサイトの開発<br>など多数</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-content">
+                      <div class="modal-content_inner">
+                        <div class="modal-close">
+                          <p>close ×</p>
+                        </div>
+                        <div class="modal-content_area">
+                          <div class="modal-content_img"><img src=""></div>
+                          <div class="modal-content_text">
+                            <p class="modal-content_title"></p>
+                            <p class="modal-content_content"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section id="contact">
+                    <h2>Contact.</h2>
+                    <div class="section-content">
+                      <form name="contact" method="post" netlify>
+                        <dl>
+                          <dt>メールアドレス<span>Email Address</span></dt>
+                          <dd class="required">
+                            <input class="form-item" id="mail_address" type="email" name="email" value="">
+                          </dd>
+                          <dt>お問い合わせの内容<span>Contents</span></dt>
+                          <dd class="required">
+                            <textarea class="form-item" id="contents" name="message" cols="40" rows="20"></textarea>
+                          </dd>
+                        </dl>
+                        <div class="form_submit">
+                          <input class="button" id="form_submit_button" type="submit" value="送信">
+                        </div>
+                      </form>
+                    </div>
+                  </section>
+                </div>
+              </main>
+        <aside id="l-site-aside">
+          <div class="nav-menu">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </aside>
+        <footer id="l-site-footer">
+          <div class="copyright-area"><span>© 2021 shohei.</span></div>
+        </footer>
+      </div>
+    </body>
+</html>
