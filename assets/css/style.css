@@ -821,6 +821,7 @@ aside#l-site-aside .nav-menu ul li a {
   margin-right: 40px;
   margin-bottom: 20px;
   position: relative;
+  overflow: hidden;
 }
 
 #top main #section-container #works .section-content_flex-container .works-content-area.section-content_flex-item:hover {
