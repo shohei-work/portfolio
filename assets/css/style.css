@@ -146,6 +146,11 @@ p {
   visibility: hidden;
 }
 
+.link-txt {
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+}
+
 /* Header style */
 #l-site-header {
   position: absolute;
